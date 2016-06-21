@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+	
+		<title>Cadastrar Professor</title>
+	<link rel="stylesheet" type="text/css" href="..\css\academico.css"/>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+&lt;script language="JavaScript" type="text/javascript" src="MascaraValidacao.js"></script>
+
+	</head>
+	
+	<body>
+	<div id="tudo"><br><br><br><br>
+	<div align="center">
+	<div id="interface">
+	<img src="..\Imagens\ifpe.png" height=100 width=250/>
+	
+	<hgroup>
+	<h1>Sistema de Gestão Acadêmica - ACAD</h1><br>
+	<h2><a href="menu_secretaria.html"> Secretaria</a> :: Cadastrar Professor</h2><br>
+	</hgroup>
+	
+	<form action="#" method="post" name="form1" id="fSecretaria">
+	
+	<fieldset class="grupo"><legend><b>Dados Pessoais</b></legend>
+		<p><label for="cNome">Nome</label> <input type="text" name="tNome" id= "cNome" size="50" maxlength="50" placeholder="Nome completo">&nbsp; <label for="cSocial">Nome Social</label><input type="text" name="tSocial" id= "cSocial" size="38" maxlength="38"></p>
+		
+		<p><label for="cCpf">CPF </label><input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);" maxlength="14"> &nbsp; &nbsp; <label for="cNascimento">Data Nascimento</label> <input type= "date" name="tNascimento" id="cNascimento"> &nbsp; &nbsp; <label for="cTelefone">Telefone</label><input type= "text" name="tel" onKeyPress="MascaraTelefone(form1.tel);" maxlength="14"  onBlur="ValidaTelefone(form1.tel);"></p>
+		
+		<p><label for="cMail">E-mail</label> <input type= "email" name="tMail" id="cMail" size="30" maxlength="40"> &nbsp; &nbsp; <label for="cPagina">Página WEB</label><input type="text" name="tPagina" id= "cPagina" size="50" maxlength="50"></p>
+	</fieldset><br>
+		
+	<fieldset class="grupo"><legend><b>Formação Acadêmica</b></legend>
+		<p>Instituição<input type="text" name="tInstituição" id= "cInstituição"size="50" maxlength="50"></p>
+		<p>Curso<input type="text" name="tCurso" id="cCurso" size="50" maxlength="50">&nbsp;&nbsp; Ano <input type="date" name="tAno" id="cAno"></p>
+		<label for="Pós-Graduação">Pós-Graduação</label>
+		<select name="Pós-Graduação">
+			<option>&nbsp;</option>
+			<option>Especialização</option>
+			<option>Mestrado</option>
+			<option>Doutorado</option>
+			<option>Pós doutorado</option>
+		</select>
+		Título da Pós-Graduação <input type="text" name="tPos" id="cPos"> &nbsp;&nbsp; Ano <input type="date" name="tAnopos" id="cAnopos"><br><br>
+	</fieldset><br>
+	
+	<fieldset class="grupo">
+	<legend><b>Atuação Profissional no IFPE - Campus Jaboatão dos Guararapes</b></legend>
+	<p><b>Curso Responsável:</b><br>
+		<input type="radio" name="tCurso" id="cTQ"/><label for="cTQ"> TQ - Técnico em Qualidade</label>
+		<input type="radio" name="tCurso" id="cTI"/><label for="cTI"> TI - Técnico em Informática para Internet</label></p><br>
+	
+	<div class="lado1">
+	<b>Turno</b><br>
+		<input type="checkbox" name="tTurno" id="cTarde"/><label for="Tarde"> Tarde </label>
+		<input type="checkbox" name="tTurno" id="cNoite"/><label for="Noite"> Noite </label>
+	</div>
+	<div class="lado1">
+		<b>Período</b><br>
+		<input type="checkbox" name="tPeríodo" id= "cPrimeiro"><label for="1º Período"> 1º Período</label>
+		<input type="checkbox" name="tPeríodo" id="cSegundo"><label for="2º Período"> 2º Período</label>
+		<input type="checkbox" name="tPeríodo" id="cTerceiro"><label for="3º Período"> 3º Período </label>
+	</div><br><br><br><br>
+	
+	<div class="lado2">
+	<label for="Disciplinas - TI"><b>Disciplinas - TI</b></label>
+				<select name="Disciplinas">
+				<option>&nbsp;</option>
+				<option>TI.1 - Português Instrumental </option>
+				<option>TI.2 - Fundamentos da Informática</option>
+				<option>TI.3 - Inglês Instrumental</option>
+				<option>TI.4 - Matemática Aplicada</option>
+				<option>TI.5 - Redes de Computadores</option>
+				<option>TI.6 - Lógica de Programação e Estrutura de Dados</option>
+				<option>TI.7 - Segurança do Trabalho</option>
+				<option>TI.8 - Sistemas Operacionais</option>
+				<option>TI.9 - Segurança de Sistemas para Internet</option>
+				<option>TI.10 - Banco de Dados</option>
+				<option>TI.11 - Desenvolvimento para WEB 1</option>
+				<option>TI.12 - Ética Profissional e Cidadania</option>
+				<option>TI.13 - Programação Orientada a Objeto</option>
+				<option>TI.14 - Projeto e Prática 1</option>
+				<option>TI.15 - Interação Humano-Computador</option>
+				<option>TI.16 - Engenharia de Software</option>
+				<option>TI.17 - Inplantação e Administração de Serviços WEB</option>
+				<option>TI.18 - Desenvolvimento para WEB 2</option>
+				<option>TI.19 - Enpreendedorismo </option>
+				<option>TI.20 - Projeto e Prática 2</option>
+		</select>
+		</div>
+		
+	<div class="lado2">
+	<label for="Disciplinas - TQ"><b>Disciplinas - TQ</b></label>
+		<select name="Disciplinas">
+				<option>&nbsp;</option>
+				<option>TQ.1 - Introdução à Qualidade</option>
+				<option>TQ.2 - Estatística Básica</option>
+				<option>TQ.3 - Português Instrumental</option>
+				<option>TQ.4 - Introdução à Administração</option>
+				<option>TQ.5 - Informática Básica</option>
+				<option>TQ.6 - Matemática Aplicada </option>
+				<option>TQ.7 - Gestão Ambiental</option>
+				<option>TQ.8 - Gestão de Processos</option>
+				<option>TQ.9 - Gestão de Produção</option>
+				<option>TQ.10 - Gestão da Qualidade e Metrologia</option>
+				<option>TQ.11 - Gestão da Qualidade de Produtos e Serviços</option>
+				<option>TQ.12 - Auditorias da Qualidade</option>
+				<option>TQ.13 - Gestão de Projetos</option>
+				<option>TQ.14 - Planejamentos de Operações</option>
+				<option>TQ.15 - Ferramentas da Qualidade</option>
+				<option>TQ.16 - Segurança do Trabalho</option>
+				<option>TQ.17 - Controle Estatístico de Processos</option>
+				<option>TQ.18 - Normatização e Legislação Aplicada</option>
+				<option>TQ.19 - Planejamento Estratégico da Qualidade</option>
+				<option>TQ.20 - Qualidade e Produtividade</option>
+				<option>TQ.21 - Tecnologias e Sistemas de Gestão da Qualidade </option>
+				<option>TQ.22 - Inglês Instrumental</option>
+				<option>TQ.23 - Contabilidade </option>
+				<option>TQ.24 - Prática Profissional </option>
+		</select>
+		</div>
+		
+	</fieldset><br>
+	
+	<fieldset class="grupo"><legend><b>Cadastro de Matrícula</b></legend>
+		Matrícula <input type= "text" name="tmatrícula" id="cmatrícula"size="13" maxlength=13><br><br>
+		
+	<button type="submit" name="submit">Cadastrar</button><br>
+
+   	</fieldset><br>
+	
+	</form>
+	<div align="right"><a href="..\index.html"> Menu Principal</a></div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+		<title>Alterar dados pessoais</title>
+	<link rel="stylesheet" type="text/css" href="..\css\academico.css"/>
+		</head>
+	<body>
+	<div id="tudo"><br><br><br><br>
+	<div align="center">
+	<div id="interface">
+	<img src="..\Imagens\ifpe.png" height=100 width=250/>
+	<hgroup>
+	<h1>Sistema de Gestão Acadêmica - ACAD</h1><br>
+	<h2><a href="menu_aluno.html"> Aluno</a> :: Alterar Dados Pessoais</h2><br>
+	</hgroup>
+	<form action="#" method="post" id="fAluno">
+	<fieldset><legend><b>Informações Acadêmicas</b></legend>
+		<b>Curso matriculado:</b>
+		<input type=radio name="tcurso" id= "cTQ"><label for="cTQ">TQ - Técnico em Qualidade </label>
+		<input type=radio name="tcurso" id="cTI"><label for="cTI">TI - Técnico em Informática para Internet</label><span style="padding-left:100px">Habilitação: Disciplinas Básicas</span><br><br>
+		<b>Matrícula:<input type="text" name="tMatrícula"><span style="padding-left:100px">Nome<input type="text" name="tNome" id= "cNome" placeholder="Nome completo"></span><span style="padding-left:70px">Sexo:<input type="radio" name="tSexo" id="cF">Fem <input type="radio" name="tSexo" id="cM">Mas</span><br><br>
+	    Reconhecimento: RESOLUÇÃO Nº086/2013 de 09/12/2013 do CONSUP<span style="padding-left:60px">Matriz: 3289-2014/1</span></br>
+		<span style="padding-left:60px">Regime: Não-seriado</span><span style="padding-left:60px">Periodicidade: Semestral</span>
+	</fieldset><br>
+	
+	<fieldset><legend><b>Dados Pessoais</b></legend>
+		Nacionalidade <input type="text" name="tNacionalidade">
+		Naturalidade <input type="text" name="tNaturalidade"><br><br>
+		Identidade <input type="text" name="tIdentidade">
+		Data de emissão <input type="text" name="tDia" size="2" maxlength="2"><input type="text" name="tMes" size="2" maxlength="2"><input type="text" name="tAno" size="4" maxlength="4"><br><br>
+		Data de Nascimento <input type="text" name="tDia" size="2" maxlength="2"><input type="text" name="tMes" size="2" maxlength="2"><input type="text" name="tAno" size="4" maxlength="4">
+		CPF <input type="text" name="tCpf">
+		Filiação <input type="text" name="tFiliação" size="35" maxlength="50">
+	</fieldset>
+
+	<button type="submit" name="submit">Salvar</button><br>
+   		
+	<div align="right"><a href="..\index.html"> Menu Principal</a></div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>

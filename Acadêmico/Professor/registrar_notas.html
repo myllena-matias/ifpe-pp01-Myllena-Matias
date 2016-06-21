@@ -1,0 +1,119 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+		<title>Registrar notas</title>
+	<link rel="stylesheet" type="text/css" href="..\css\academico.css"/>
+	</head>
+	<body>
+	<div id="tudo"><br><br><br><br>
+	<div align="center">
+	<div id="interface">
+	<img src="..\Imagens\ifpe.png" height=100 width=250/>
+	<hgroup>
+	<h1>Sistema de Gestão Acadêmica - ACAD</h1><br>
+	<h2><a href="menu_professor.html"> Professor</a> :: Registrar notas</h2><br>
+	</hgroup>
+	<form action="#" method="post" id="fProfessor">
+	<fieldset class="grupo">
+		<div class="campo">
+		<label for="Alunos cadastrados"><b>Alunas cadastradas</b></label>
+			<select name="Aluna">
+				<option>&nbsp;</option>
+				<option>ADRIANA LIMA DOS SANTOS</option>
+				<option>BEATRIZ NASCIMENTO SILVA </option>
+				<option>CLARA RODRIGUES DOS SANTOS </option>
+				<option>DANIELA SANTOS DA SILVA </option>
+				<option>AUGUSTO CESAR PEREIRA PINTO </option>
+				<option>ELIANA FIDELIS DE MELO </option>
+				<option>FERNANDA DE AZEVEDO SILVA </option>
+				<option>GISELLY FREIRE DA SILVA </option>
+				<option>HELENA SOARES DA SILVA </option>
+				<option>ISADORA HERMINIO DA SILVA </option>
+				<option>JAMILY VIEIRA CAVALCANTE </option>
+				<option>KELLY MUNIZ DO NASCIMENTO </option>
+				<option>LUISA DA SILVA FERREIRA </option>
+				<option>MARCELA MARQUES DA SILVA </option>
+				<option>NICOLLY LORRAYNNE DO NASCIMENTO SILVEIRA </option>
+				<option>PAULA VIEIRA DA SILVA </option>
+				<option>RAFAELA LOPES DA SILVA </option>
+				<option>SOPHIA DIAS DA SILVA </option>
+		</select>
+		</div><br><br><br>
+	
+	<div class="lado2">
+	<label for="Disciplinas - TI"><b>Disciplinas - TI</b></label>
+				<select name="Disciplinas">
+				<option>&nbsp;</option>
+				<option>TI.1 - Português Instrumental </option>
+				<option>TI.2 - Fundamentos da Informática</option>
+				<option>TI.3 - Inglês Instrumental</option>
+				<option>TI.4 - Matemática Aplicada</option>
+				<option>TI.5 - Redes de Computadores</option>
+				<option>TI.6 - Lógica de Programação e Estrutura de Dados</option>
+				<option>TI.7 - Segurança do Trabalho</option>
+				<option>TI.8 - Sistemas Operacionais</option>
+				<option>TI.9 - Segurança de Sistemas para Internet</option>
+				<option>TI.10 - Banco de Dados</option>
+				<option>TI.11 - Desenvolvimento para WEB 1</option>
+				<option>TI.12 - Ética Profissional e Cidadania</option>
+				<option>TI.13 - Programação Orientada a Objeto</option>
+				<option>TI.14 - Projeto e Prática 1</option>
+				<option>TI.15 - Interação Humano-Computador</option>
+				<option>TI.16 - Engenharia de Software</option>
+				<option>TI.17 - Inplantação e Administração de Serviços WEB</option>
+				<option>TI.18 - Desenvolvimento para WEB 2</option>
+				<option>TI.19 - Enpreendedorismo </option>
+				<option>TI.20 - Projeto e Prática 2</option>
+		</select>
+		</div>
+		
+	<div class="lado2">
+	<label for="Disciplinas - TQ"><b>Disciplinas - TQ</b></label>
+		<select name="Disciplinas">
+				<option>&nbsp;</option>
+				<option>TQ.1 - Introdução à Qualidade</option>
+				<option>TQ.2 - Estatística Básica</option>
+				<option>TQ.3 - Português Instrumental</option>
+				<option>TQ.4 - Introdução à Administração</option>
+				<option>TQ.5 - Informática Básica</option>
+				<option>TQ.6 - Matemática Aplicada </option>
+				<option>TQ.7 - Gestão Ambiental</option>
+				<option>TQ.8 - Gestão de Processos</option>
+				<option>TQ.9 - Gestão de Produção</option>
+				<option>TQ.10 - Gestão da Qualidade e Metrologia</option>
+				<option>TQ.11 - Gestão da Qualidade de Produtos e Serviços</option>
+				<option>TQ.12 - Auditorias da Qualidade</option>
+				<option>TQ.13 - Gestão de Projetos</option>
+				<option>TQ.14 - Planejamentos de Operações</option>
+				<option>TQ.15 - Ferramentas da Qualidade</option>
+				<option>TQ.16 - Segurança do Trabalho</option>
+				<option>TQ.17 - Controle Estatístico de Processos</option>
+				<option>TQ.18 - Normatização e Legislação Aplicada</option>
+				<option>TQ.19 - Planejamento Estratégico da Qualidade</option>
+				<option>TQ.20 - Qualidade e Produtividade</option>
+				<option>TQ.21 - Tecnologias e Sistemas de Gestão da Qualidade </option>
+				<option>TQ.22 - Inglês Instrumental</option>
+				<option>TQ.23 - Contabilidade </option>
+				<option>TQ.24 - Prática Profissional </option>
+		</select>
+		</div><br><br><br>
+	
+		<div class="lado2">
+			<b>Unidade</b><br>
+			<input type="radio" name="tUnidade" id="cUnidadeI"> <label for="cUnidadeI"> Unidade I</label> <input type="radio" name="tUnidade" id="cUnidadeII"><label for="cUnidadeII">Unidade II</label></div><br>
+			<div class="lado2">&nbsp;&nbsp;&nbsp;
+			Nota<input type="text" name="tRegistrarfaltas" size="1" maxlength="5" id= "cNota"></div><br><br>
+			
+			<button type="submit" name="submit">Registrar Nota</button><br>
+	
+	</fieldset><br>
+	</form>
+	
+	<div align="right"><a href="..\index.html"> Menu Principal</a></div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>

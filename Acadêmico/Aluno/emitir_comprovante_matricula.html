@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+		<title>Emitir comprovante de matrícula</title>
+	<link rel="stylesheet" type="text/css" href="..\css\academico.css"/>
+		</head>
+	<body>
+<div id="tudo"><br><br><br><br>
+	<div align="center">
+	<div id="interface">
+	<img src="..\Imagens\ifpe.png" height=100 width=250/>
+	<hgroup>
+	<h1>Sistema de Gestão Acadêmica - ACAD</h1><br>
+	<h2><a href="menu_aluno.html"> Aluno</a> :: Emitir Comprovante de Matrícula</h2><br>
+	</hgroup>
+	<form action="#" method="post" id="fAluno">
+	
+	<fieldset class="grupo">
+		<div class="campo">
+		<label for="Alunos cadastrados"><b>Alunas cadastradas</b></label>
+			<select name="Aluna">
+				<option>&nbsp;</option>
+				<option>ADRIANA LIMA DOS SANTOS</option>
+				<option>BEATRIZ NASCIMENTO SILVA </option>
+				<option>CLARA RODRIGUES DOS SANTOS </option>
+				<option>DANIELA SANTOS DA SILVA </option>
+				<option>AUGUSTO CESAR PEREIRA PINTO </option>
+				<option>ELIANA FIDELIS DE MELO </option>
+				<option>FERNANDA DE AZEVEDO SILVA </option>
+				<option>GISELLY FREIRE DA SILVA </option>
+				<option>HELENA SOARES DA SILVA </option>
+				<option>ISADORA HERMINIO DA SILVA </option>
+				<option>JAMILY VIEIRA CAVALCANTE </option>
+				<option>KELLY MUNIZ DO NASCIMENTO </option>
+				<option>LUISA DA SILVA FERREIRA </option>
+				<option>MARCELA MARQUES DA SILVA </option>
+				<option>NICOLLY LORRAYNNE DO NASCIMENTO SILVEIRA </option>
+				<option>PAULA VIEIRA DA SILVA </option>
+				<option>RAFAELA LOPES DA SILVA </option>
+				<option>SOPHIA DIAS DA SILVA </option>
+		</select>
+		</div><br>
+		
+	<b>Semestre</b>
+			<input type="text" name="tSemestre" size="1" maxlength="8" id= "cSemestre"><br><br>
+	
+	<b>Tipo de emissão</b> <br>
+		<input type="radio" name="tTipodeemissão" id="cPDF"><label for="cPDF"> Gerar PDF </label><br>
+		<input type="radio" name="tTipodeemissão" id="cMail"><label for="cMail">Enviar por E-mail </label><br>
+
+		</fieldset>
+        <button type="submit" name="submit">Emitir</button><br>
+    
+	</form>
+	
+	<div align="right"><a href="..\index.html"> Menu Principal</a></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>
